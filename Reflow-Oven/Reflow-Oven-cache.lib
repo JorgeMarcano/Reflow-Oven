@@ -1,0 +1,269 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Conn_01x02_Female
+#
+DEF Connector_Conn_01x02_Female J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Conn_01x02_Female" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
+A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
+P 2 1 1 6 -50 -100 -20 -100 N
+P 2 1 1 6 -50 0 -20 0 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_D_Bridge_+-AA
+#
+DEF Device_D_Bridge_+-AA D 0 0 Y Y 1 F N
+F0 "D" 100 275 50 H V L CNN
+F1 "Device_D_Bridge_+-AA" 100 200 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ D*Bridge*
+ D*Rectifier*
+$ENDFPLIST
+DRAW
+C -200 0 10 0 1 0 F
+C 0 -200 10 0 1 0 F
+C 0 200 10 0 1 0 F
+C 200 0 10 0 1 0 F
+P 2 0 1 10 -100 150 -50 100 N
+P 2 0 1 10 -50 -100 -100 -150 N
+P 2 0 1 10 100 -50 150 -100 N
+P 2 0 1 10 100 50 150 100 N
+P 4 0 1 10 -150 100 -100 50 -75 125 -150 100 N
+P 4 0 1 10 -100 -50 -150 -100 -75 -125 -100 -50 N
+P 4 0 1 10 50 100 100 150 125 75 50 100 N
+P 4 0 1 10 125 -75 50 -100 100 -150 125 -75 N
+P 5 0 1 0 -200 0 0 -200 200 0 0 200 -200 0 N
+X + 1 300 0 100 L 50 50 1 1 P
+X - 2 -300 0 100 R 50 50 1 1 P
+X ~~ 3 0 300 100 D 50 50 1 1 P
+X ~~ 4 0 -300 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Q_TRIAC_A1A2G
+#
+DEF Device_Q_TRIAC_A1A2G D 0 0 Y Y 1 F N
+F0 "D" 125 25 50 H V L CNN
+F1 "Device_Q_TRIAC_A1A2G" 125 -50 50 H V L CNN
+F2 "" 75 25 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+DRAW
+P 2 0 1 8 -100 -50 100 -50 N
+P 2 0 1 8 -100 50 100 50 N
+P 2 0 1 0 -50 -100 -25 -50 N
+P 3 0 1 8 -100 50 -50 -50 0 50 N
+P 3 0 1 8 0 -50 50 50 100 -50 N
+X A1 1 0 -150 100 U 50 25 1 1 P
+X A2 2 0 150 100 D 50 25 1 1 P
+X G 3 -150 -100 100 R 50 25 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Thermocouple
+#
+DEF Device_Thermocouple TC 0 0 N Y 1 F N
+F0 "TC" -120 150 50 H V C CNN
+F1 "Device_Thermocouple" -200 -160 50 H V L CNN
+F2 "" -575 50 50 H I C CNN
+F3 "" -575 50 50 H I C CNN
+$FPLIST
+ PIN?ARRAY*
+ bornier*
+ *Terminal?Block*
+ Thermo*Couple*
+$ENDFPLIST
+DRAW
+C -120 0 10 0 1 0 F
+P 2 0 1 0 -160 -40 -170 -50 N
+P 2 0 1 0 -140 -20 -150 -30 N
+P 2 0 1 0 -120 0 -130 -10 N
+P 2 0 1 0 -100 20 -110 10 N
+P 2 0 1 0 -80 40 -90 30 N
+P 2 0 1 0 -60 60 -70 50 N
+P 2 0 1 0 -40 80 -50 70 N
+P 2 0 1 0 -20 100 -30 90 N
+P 2 0 1 0 0 -100 -10 -100 N
+P 2 0 1 0 0 100 -20 100 N
+P 3 0 1 0 10 -100 -20 -100 -170 50 N
+X + 1 100 100 100 L 50 50 1 1 P
+X - 2 100 -100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Graphic_SYM_Hot_Large
+#
+DEF Graphic_SYM_Hot_Large #SYM 0 40 Y N 1 F N
+F0 "#SYM" 0 200 50 H I C CNN
+F1 "Graphic_SYM_Hot_Large" 0 -250 50 H I C CNN
+F2 "" 0 -200 50 H I C CNN
+F3 "" 30 -200 50 H I C CNN
+DRAW
+A -100 -107 62 -372 365 0 1 20 N -50 -145 -50 -70
+A -50 -107 62 -372 365 0 1 20 N 0 -145 0 -70
+A 0 -107 62 -372 365 0 1 20 N 50 -145 50 -70
+A 0 -33 62 1428 -1435 0 1 20 N -50 5 -50 -70
+A 50 -33 62 1428 -1435 0 1 20 N 0 5 0 -70
+A 100 -33 62 1428 -1435 0 1 20 N 50 5 50 -70
+P 2 0 1 20 -95 -170 105 -170 N
+P 4 0 1 20 -200 -200 200 -200 0 150 -200 -200 f
+ENDDRAW
+ENDDEF
+#
+# dk_Optoisolators-Transistor-Photovoltaic-Output_LTV-356T
+#
+DEF dk_Optoisolators-Transistor-Photovoltaic-Output_LTV-356T U 0 40 Y Y 1 F N
+F0 "U" 0 200 60 H V C CNN
+F1 "dk_Optoisolators-Transistor-Photovoltaic-Output_LTV-356T" 0 -225 60 H V C CNN
+F2 "digikey-footprints:SMD-4_4.4x3.85mm_P2.54mm" 200 200 60 H I L CNN
+F3 "http://optoelectronics.liteon.com/upload/download/DS70-2001-010/LTV-356T%20series%20201610.pdf" 200 300 60 V I L CNN
+F4 "160-1337-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "LTV-356T" 200 500 60 H I L CNN "MPN"
+F6 "Isolators" 200 600 60 H I L CNN "Category"
+F7 "Optoisolators - Transistor, Photovoltaic Output" 200 700 60 H I L CNN "Family"
+F8 "http://optoelectronics.liteon.com/upload/download/DS70-2001-010/LTV-356T%20series%20201610.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/lite-on-inc/LTV-356T/160-1337-1-ND/385805" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "OPTOISOLATOR 3.75KV TRANS 4-SOP" 200 1000 60 H I L CNN "Description"
+F11 "Lite-On Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -150 150 150 -150 0 1 0 f
+P 2 0 1 0 -100 -25 -50 -25 N
+P 2 0 1 0 25 75 25 -75 N
+P 3 0 1 0 -150 -100 -75 -100 -75 -25 N
+P 3 0 1 0 -150 100 -75 100 -75 25 N
+P 3 0 1 0 25 -50 100 -100 150 -100 N
+P 3 0 1 0 25 50 100 100 150 100 N
+P 4 0 1 0 -100 25 -50 25 -75 -25 -100 25 F
+P 4 0 1 0 85 -90 70 -65 55 -85 85 -90 F
+X ~ 1 -300 100 150 R 50 50 1 1 P
+X ~ 2 -300 -100 150 R 50 50 1 1 P
+X ~ 3 300 -100 150 L 50 50 1 1 P
+X ~ 4 300 100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Optoisolators-Triac-SCR-Output_MOC3021
+#
+DEF dk_Optoisolators-Triac-SCR-Output_MOC3021 U 0 0 Y Y 1 F N
+F0 "U" 0 250 60 H V C CNN
+F1 "dk_Optoisolators-Triac-SCR-Output_MOC3021" 0 -300 60 H V C CNN
+F2 "digikey-footprints:DIP-6_W7.62mm" 200 200 60 H I L CNN
+F3 "http://optoelectronics.liteon.com/upload/download/DS-70-99-0019/MOC302X%20series%20201606.pdf" 200 300 60 V I L CNN
+F4 "160-1374-5-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "MOC3021" 200 500 60 H I L CNN "MPN"
+F6 "Isolators" 200 600 60 H I L CNN "Category"
+F7 "Optoisolators - Triac, SCR Output" 200 700 60 H I L CNN "Family"
+F8 "http://optoelectronics.liteon.com/upload/download/DS-70-99-0019/MOC302X%20series%20201606.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/lite-on-inc/MOC3021/160-1374-5-ND/385844" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "OPTOISOLATOR 5KV TRIAC 6DIP" 200 1000 60 H I L CNN "Description"
+F11 "Lite-On Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -150 175 150 -200 0 1 0 f
+P 2 0 1 0 -75 -25 -25 -25 N
+P 2 0 1 0 75 -25 125 -25 N
+P 2 0 1 0 75 25 25 25 N
+P 3 0 1 0 75 -25 75 -100 150 -100 N
+P 3 0 1 0 150 100 75 100 75 25 N
+P 4 0 1 0 -150 100 -50 100 -50 -100 -150 -100 N
+P 4 0 1 0 -75 25 -50 -25 -25 25 -75 25 F
+P 4 0 1 0 25 -25 50 25 75 -25 25 -25 F
+P 4 0 1 0 75 25 100 -25 125 25 75 25 F
+X ~ 1 -300 100 150 R 50 50 1 1 P
+X ~ 2 -300 -100 150 R 50 50 1 1 P
+X NC 3 0 -200 150 U 50 40 1 1 N N
+X ~ 4 300 -100 150 L 50 50 1 1 P
+X Sub 5 300 0 150 L 50 35 1 1 P
+X ~ 6 300 100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_LINE
+#
+DEF power_LINE #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_LINE" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X LINE 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_NEUT
+#
+DEF power_NEUT #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_NEUT" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X NEUT 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_VCC
+#
+DEF power_VCC #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_VCC" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X VCC 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library
